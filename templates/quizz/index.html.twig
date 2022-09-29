@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello QuizzController!{% endblock %}
+
+{% block body %}
+
+<h1>{{ quizz_name.name }}</h1>
+
+<ul>
+    {% for question in questions %}
+        <li>{{ question.question }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
